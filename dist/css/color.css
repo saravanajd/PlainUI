@@ -1,0 +1,40 @@
+:root {
+    
+    /* app */
+    --primary-color: hsl(171deg 100% 46%);
+    --primary-color-light: hsl(171deg 100% 50%);
+    --primary-color-dark: hsl(171deg 100% 35%);
+    --secondary-color: hsl(320deg 100% 70%);
+    --secondary-color-light: hsl(320deg 100% 75%);
+    --secondary-color-dark: hsl(320deg 100% 65%);
+
+    /* header */
+    --header-background: hsl(0deg 0% 20%);
+    --header-foreground: hsl(0deg 0% 20%);
+
+    /* sidebar */
+    --sidebar-bg: hsl(209deg 26% 25%);
+    --sidebar-bg-light: hsl(209deg 26% 29%);
+    --sidebar-bg-dark: hsl(209deg 26% 29%);
+    --sidebar-fg:hsl(209deg 26% 29%);
+
+    /* layout */
+    --layout-bg:var(--color-danger);
+    --layout-fg:var(--color-border);
+
+    /* text */
+    --text-light-1:var(--color-dark);
+    --text-light-2:var(--color-dark);
+    --text-dark-1:var(--color-dark);
+    --text-dark-2:var(--color-dark);
+
+    /* color */
+    --color-info: rgba(51, 204, 204, 1);
+    --color-border: rgba(27, 31, 35, .15);
+    --color-dark: rgba(62, 84, 104, 1);
+    --color-primary: rgba(51, 204, 204, 1);
+    --color-danger: rgba(255, 51, 51, 1);
+    --color-warning: rgba(255, 204, 0, 1);
+    --color-success: rgba(13, 205, 188, 1);
+    --color-purble: rgba(101, 121, 251, 01);
+}

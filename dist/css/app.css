@@ -1,0 +1,27 @@
+/* @import url(button.css);
+@import url(form.css);
+@import url(layout.css);
+@import url(notification.css);
+
+@import url(table.css);
+@import url(text.css);
+@import url(color.css); */
+@import url(layout.css);
+@import url(sidebar.css);
+@import url(header.css);
+@import url(utility.css);
+
+:root {
+  --secondary-blue: rgb(33, 73, 140);
+  --primary-blue: rgb(33, 73, 125);
+  --navbar-bg: #f5f5f5;
+  --navbar-fg: #555;
+  --logo-bg: rgb(234, 234, 234);
+  --workspace-bg: #fff;
+  --hover-bg: #eef4ff;
+  --hover-red-bg: #ffeeee;
+  --hover-yellow-bg: #fffdee;
+  --hover-green-bg: #eeffee;
+  --primary-green: #94c924;
+  --secondary-green: rgb(143, 194, 34);
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlainUI</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="dist/plugins/bootstrap_v5.3/bootstrap.min.css"
+    />
+    <script src="dist/plugins/bootstrap_v5.3/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="dist/css/app.css" />
+    <script src="dist/js/app.js"></script>
+
+    <script src="app.v1.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar-wrapper">
+        <div class="logo">
+          <a href="#">
+            <img class="img" src="dist/img/logo.png" alt="PlainUI" />
+          </a>
+        </div>
+        <div class="sidebar-user">
+          <h6 class="sidebar-user-name">Saravanan</h6>
+          <small class="sidebar-user-role">Admin</small>
+        </div>
+        <nav>
+          <ul class="sidebar-nav">
+            <li class="active">
+              <a
+                href="#"
+                data-workspace-src="Dashboard"
+                class="active"
+              >
+                <i class="fas fa-dashboard fa-fw mr-1" aria-hidden="true"></i>
+                <span class="sidebar-text">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-workspace-src="Users">
+                <i class="fas fa-user-tie fa-fw mr-1" aria-hidden="true"></i>
+                <span class="sidebar-text">Users</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                data-workspace-src="Company"
+              >
+                <i class="fas fa-suitcase fa-fw mr-1" aria-hidden="true"></i>
+                <span class="sidebar-text">Company</span>
+              </a>
+            </li>
+            <li>
+              <div class="submenu-wrapper">
+                <a
+                  class=""
+                  data-toggle="submenu"
+                  data-target="#ddAcc"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  href="#"
+                >
+                  <i class="fas fa-cog fa-fw mr-1"></i> Configuration
+                  <span class="fas fa-caret-right float-end"></span>
+                </a>
+                <div class="submenu" id="ddAcc" data-parent=".sidebar-nav">
+                  <a
+                    class="submenu-item"
+                    href="#"
+                    data-accesslevel="1,2"
+                    data-workspace-src="QuickBooks"
+                  >
+                    <span class="sidebar-text">QuickBooks</span>
+                  </a>
+                  <a
+                    class="submenu-item"
+                    href="#"
+                    data-accesslevel="1,2"
+                    data-workspace-src="Setting"
+                  >
+                    <span class="sidebar-text">Setting</span>
+                  </a>
+                  <a
+                    class="submenu-item"
+                    href="#"
+                    data-accesslevel="1,2"
+                    data-workspace-src="Mappging"
+                  >
+                    <span class="sidebar-text">Mappging</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-container">
+        <header class="header">
+          <div class="header-left">
+            <i
+              class="fas fa-bars menu-toggle"
+              onclick="toggleMenu()"
+              aria-hidden="true"
+            ></i>
+            <div class="header-title">Users</div>
+          </div>
+          <div class="header-right">
+            <ul>
+              <li class="dropdown">
+                <a
+                  class="dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  ><i class="fa fa-envelope"></i> <b class="caret"></b
+                ></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a
+                  class="dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  ><i class="fa fa-user"></i> John Smith <b class="caret"></b
+                ></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <main id="main">
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
