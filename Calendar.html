@@ -13,11 +13,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- 
-    <link
-      rel="stylesheet"
-      href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
-    /> -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
 
     <link
       rel="stylesheet"
@@ -25,22 +26,19 @@
     />
     <script src="dist/plugins/bootstrap_v5.3/bootstrap.bundle.min.js"></script>
 
-    <script
-      src="https://code.jquery.com/jquery-3.7.0.min.js"
-      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-      crossorigin="anonymous"
-    ></script>
-
     <link rel="stylesheet" href="dist/css/app.css" />
-
     <script src="dist/js/app.js"></script>
-    <script src="app.v1.js"></script>
+
+    <link rel="stylesheet" href="dist/css/calendar.css" />
+
+    <script src="dist/plugins/angularjs/angular_v1.8.2.js"></script>
+    <script src="dist/pages/calendar.js"></script>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper" ng-app="PlainUI" ng-controller="appController">
       <div class="sidebar-wrapper">
         <div class="logo">
-          <a href="\">
+          <a href="#">
             <!-- <img class="img" src="dist/img/logo.png" alt="PlainUI" /> -->
             <span class="logo-text"
               >Plain<label class="text-danger">UI</label></span
@@ -48,15 +46,8 @@
           </a>
         </div>
         <div class="sidebar-user">
-          <div class="user-logo">
-            <a>
-              <i class="fa fa-user-circle"></i>
-            </a>
-          </div>
-          <div class="user-text">
-            <h6 class="sidebar-user-name">Saravanan</h6>
-            <small class="sidebar-user-role">Admin</small>
-          </div>
+          <h6 class="sidebar-user-name">Saravanan</h6>
+          <small class="sidebar-user-role">Admin</small>
         </div>
         <nav>
           <ul class="sidebar-nav">
@@ -170,9 +161,67 @@
             </ul>
           </div>
         </header>
-        <main id="main"></main>
+        <main id="main">
+          <div id="navData" data-workspace-src="Calendar"></div>
+          <div class="breadcrumb-wrapper">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="#"> Home </a>
+              </li>
+              <li class="breadcrumb-item active">Calendar</li>
+            </ol>
+          </div>
+          <div class="container">
+            <div class="page-header">
+              <h3>Calendar</h3>
+            </div>
+            <div class="card border-0 shadow">
+              <div class="card-body">
+                <table
+                  class="
+                    table table-sm table-bordered
+                    bg-white
+                    calendar-table
+                    mb-0
+                  "
+                  id="calendar"
+                >
+                  <thead>
+                    <tr>
+                      <th style="z-index: 5 !important"></th>
+                      <th
+                        ng-repeat="item in calendarSettings.columns track by $index"
+                      >
+                        {{item.name}}
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-repeat="item in calendarSettings.calendarTimes track by $index">
+                      <td rowspan="2" ng-if="item.rowSpan">{{item.time}}</td>
+                      <td
+                        class="cell"
+                        ng-class="{'non-ava': item.nonAvailability}"
+                        ng-repeat="space in calendarSettings.columns track by $index"
+                        onclick="calendar.initCalendarFunction(this)"
+                        data-spaceID="{{space.id}}"
+                        data-startTime="{{item.time}}"
+                        ng-click="getTime(item,space)"
+                      >
+                        <div
+                          class="hover-time"
+                        >
+                          {{item.time}}
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </main>
       </div>
     </div>
-    <div class="backdrop-blur"></div>
   </body>
 </html>

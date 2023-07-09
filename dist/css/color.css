@@ -38,3 +38,58 @@
     --color-success: rgba(13, 205, 188, 1);
     --color-purble: rgba(101, 121, 251, 01);
 }
+
+/* -- design 1 --  */
+/* --sidebar-bg: hsl(218, 23%, 33%);
+--sidebar-fg: hsl(208, 27%, 90%);
+--sidebar-user-bg: hsl(215, 22%, 23%);
+--sidebar-user-fg: var(--sidebar-fg);
+--sidebar-item-active-bg: hsl(217, 22%, 23%);
+--sidebar-item-active-fg: var(--color-white);
+--sidebar-item-hover-bg: var(--sidebar-item-active-bg);
+--sidebar-item-hover-fg: var(--sidebar-item-active-fg);
+
+--header-bg: hsl(0,0%,100%);
+--header-fg: var(--workspace-fg);
+--header-item-hover-bg: var(--sidebar-item-active-bg);
+
+--workspace-bg: #ffffff;
+--workspace-fg: #212529; */
+
+
+/* -- design 2 --  */
+/* 
+--sidebar-bg: hsl(210, 28%, 21%);
+--sidebar-fg: hsl(208, 27%, 90%);
+--sidebar-user-bg: hsl(214, 27%, 18%);
+--sidebar-user-fg: var(--sidebar-fg);
+--sidebar-item-active-bg: hsl(216, 26%, 15%);
+--sidebar-item-active-fg: var(--color-white);
+--sidebar-item-hover-bg: var(--sidebar-item-active-bg);
+--sidebar-item-hover-fg: var(--sidebar-item-active-fg);
+
+--header-bg: hsl(0,0%,100%);
+--header-fg: var(--workspace-fg);
+--header-item-hover-bg: var(--sidebar-item-active-bg);
+
+--workspace-bg: #ffffff;
+--workspace-fg: #212529; */
+
+
+/* -- design 3 --  */
+  /* url: https://demo.adminkit.io/index.html */
+  /* --sidebar-bg: hsl(212, 28%, 18%);
+  --sidebar-fg: hsl(214, 7%, 76%);
+  --sidebar-user-bg: hsl(214, 35%, 22%);
+  --sidebar-user-fg: var(--sidebar-fg);
+  --sidebar-item-active-bg: hsl(214, 35%, 22%);
+  --sidebar-item-active-fg: var(--color-white);
+  --sidebar-item-hover-bg: var(--sidebar-item-active-bg);
+  --sidebar-item-hover-fg: var(--sidebar-item-active-fg);
+
+  --header-bg: hsl(0,0%,100%);
+  --header-fg: var(--workspace-fg);
+  --header-item-hover-bg: var(--sidebar-item-active-bg);
+
+  --workspace-bg: hsl(220, 37%, 97%);
+  --workspace-fg: #212529; */

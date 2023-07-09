@@ -4,10 +4,12 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  background-color: #004052;
-  color: #fff;
+  background-color: var(--header-bg);
+  color: var(--header-fg);
   z-index: 2;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  border-bottom: 1px solid #ddd;
+  height: var(--header-height);
 }
 
 .header-left,
@@ -39,14 +41,11 @@
 }
 
 .menu-toggle {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #fff;
   cursor: pointer;
   padding: 10px 15px;
   transition: all 0.3s ease;
-  margin-right: 1rem;
 }
 
 .menu-toggle:hover {
-  background-color: rgb(0, 0, 0, 0.2);
+  background-color: var(--header-item-hover-bg);
 }

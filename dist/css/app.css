@@ -12,12 +12,32 @@
 @import url(utility.css);
 
 :root {
-  --secondary-blue: rgb(33, 73, 140);
+  --color-green: hsl(171, 100%, 35%);
+  --color-white: #ffffff;
+  /* 
+  url: http://preview.themeforest.net/item/bracket-responsive-bootstrap-3-admin-template/full_screen_preview/6894362?_ga=2.81447191.1261730584.1688830751-103700357.1685007071 */
+  
+  --sidebar-bg: hsl(214, 33%, 17%);
+  --sidebar-fg: hsl(214, 7%, 76%);
+  --sidebar-user-bg: hsl(215, 32%, 15%);
+  --sidebar-user-fg: var(--sidebar-fg);
+  --sidebar-item-active-bg: hsl(213, 33%, 12%);
+  --sidebar-item-active-fg: var(--color-white);
+  --sidebar-item-hover-bg: var(--sidebar-user-bg);
+  --sidebar-item-hover-fg: var(--sidebar-item-active-fg);
+  --sidebar-logo-height: var(--header-height);
+
+  --header-bg: hsl(0, 0%, 100%);
+  --header-fg: var(--workspace-fg);
+  --header-item-hover-bg: hsl(0, 0%, 90%);
+  --header-height: 2.5rem;
+
+  --workspace-bg: hsl(220, 37%, 97%);
+  --workspace-fg: #212529;
+
   --primary-blue: rgb(33, 73, 125);
-  --navbar-bg: #f5f5f5;
-  --navbar-fg: #555;
+  --secondary-blue: rgb(33, 73, 140);
   --logo-bg: rgb(234, 234, 234);
-  --workspace-bg: #fff;
   --hover-bg: #eef4ff;
   --hover-red-bg: #ffeeee;
   --hover-yellow-bg: #fffdee;

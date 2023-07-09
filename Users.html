@@ -13,153 +13,195 @@
 <div class="container">
   <div class="page-header">
     <h3>Users</h3>
-    <button
-      class="btn btn-sm btn-info rounded"
-      data-toggle="modal"
-      data-target="#addUser"
-    >
-      <i class="fas fa-plus pe-1" aria-hidden="true"></i>Add User
-    </button>
   </div>
-  <div class="row mb-3">
-    <div class="col-sm-4">
-      <div class="input-group input-group-sm">
-        <input type="text" class="form-control" placeholder="Search..." />
-        <span class="input-group-text">
-          <a>
-            <i class="fa fa-search"></i>
-          </a>
-        </span>
+  <div class="card mt-3">
+    <div class="card-body">
+      <div class="d-flex align-items-center mb-3">
+        <h5 class="mb-0">Users</h5>
+        <button
+          class="btn btn-sm btn-primary rounded ms-auto"
+          data-toggle="modal"
+          data-target="#addUser"
+        >
+          <i class="fas fa-plus pe-1" aria-hidden="true"></i>Add new User
+        </button>
+      </div>
+      <div class="row mb-3">
+        <div class="col-sm-4">
+          <div class="input-group input-group-sm">
+            <input type="text" class="form-control" placeholder="Search..." />
+            <span class="input-group-text">
+              <a>
+                <i class="fa fa-search"></i>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="col-sm-8 d-flex align-items-center justify-content-end">
+          <span class="me-1">User Role</span>
+          <select class="form-select form-select-sm" style="width: 200px">
+            <option value="0" selected="selected">All</option>
+            <option value="1">Admin</option>
+            <option value="2">User</option>
+          </select>
+        </div>
+      </div>
+      <div class="table-wrapper">
+        <table class="table table-sm table-no-border bg-white mb-0">
+          <thead>
+            <tr>
+              <th class="border-top-0 bg-light">Name</th>
+              <th class="border-top-0 bg-light">Email</th>
+              <th width="150px" class="border-top-0 bg-light">Role</th>
+              <th width="100px" class="border-top-0 bg-light">Active</th>
+              <th width="100px" class="border-top-0 bg-light">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Admin</td>
+              <td>louis.buhrmann@gmail.com</td>
+              <td>Admin</td>
+              <td>Yes</td>
+              <td class="text-center">
+                <a
+                  class="text-primary"
+                  data-toggle="modal"
+                  data-target="#addUser"
+                >
+                  <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>rajveer</td>
+              <td>rajveer@gmail.com</td>
+              <td>User</td>
+              <td>Yes</td>
+              <td class="text-center">
+                <a
+                  class="text-primary"
+                  data-toggle="modal"
+                  data-target="#addUser"
+                >
+                  <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>akash</td>
+              <td>akash@gmail.com</td>
+              <td>Admin</td>
+              <td>Yes</td>
+              <td class="text-center">
+                <a
+                  class="text-primary"
+                  data-toggle="modal"
+                  data-target="#addUser"
+                >
+                  <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>janice</td>
+              <td>bookkeeper@gmail.com</td>
+              <td>Admin</td>
+              <td>Yes</td>
+              <td class="text-center">
+                <a
+                  class="text-primary"
+                  data-toggle="modal"
+                  data-target="#addUser"
+                >
+                  <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>odette</td>
+              <td>office@gmail.com</td>
+              <td>User</td>
+              <td>No</td>
+              <td class="text-center">
+                <a
+                  class="text-primary"
+                  data-toggle="modal"
+                  data-target="#addUser"
+                >
+                  <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Corneli</td>
+              <td>admin@gmail.com</td>
+              <td>Admin</td>
+              <td>Yes</td>
+              <td class="text-center">
+                <a
+                  class="text-primary"
+                  data-toggle="modal"
+                  data-target="#addUser"
+                >
+                  <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Penny - for signoff by Janice</td>
+              <td>penny@gmail.com</td>
+              <td>User</td>
+              <td>Yes</td>
+              <td class="text-center">
+                <a
+                  class="text-primary"
+                  data-toggle="modal"
+                  data-target="#addUser"
+                >
+                  <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>odette</td>
+              <td>office2@gmail.com</td>
+              <td>User</td>
+              <td>Yes</td>
+              <td class="text-center">
+                <a
+                  class="text-primary"
+                  data-toggle="modal"
+                  data-target="#addUser"
+                >
+                  <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>user</td>
+              <td>user@gmail.com</td>
+              <td>User</td>
+              <td>Yes</td>
+              <td class="text-center">
+                <a
+                  class="text-primary"
+                  data-toggle="modal"
+                  data-target="#addUser"
+                >
+                  <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-    <div class="col-sm-8 d-flex align-items-center justify-content-end">
-      <span class="me-1">User Role</span>
-      <select class="form-select form-select-sm" style="width: 200px">
-        <option value="0" selected="selected">All</option>
-        <option value="1">Admin</option>
-        <option value="2">User</option>
-      </select>
-    </div>
-  </div>
-  <div class="table-wrapper">
-    <table class="table table-sm table-no-border bg-white mb-0">
-      <thead>
-        <tr>
-          <th class="border-top-0 bg-light">Name</th>
-          <th class="border-top-0 bg-light">Email</th>
-          <th width="150px" class="border-top-0 bg-light">Role</th>
-          <th width="100px" class="border-top-0 bg-light">Active</th>
-          <th width="100px" class="border-top-0 bg-light">Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Admin</td>
-          <td>louis.buhrmann@accountingandtaxservices.ca</td>
-          <td>Admin</td>
-          <td>Yes</td>
-          <td class="text-center">
-            <a class="text-primary" data-toggle="modal" data-target="#addUser">
-              <i class="fas fa-pencil-alt" aria-hidden="true"></i>
-            </a>
-          </td>
-        </tr>
-
-        <tr>
-          <td>rajveer</td>
-          <td>rajveer@accountingandtaxservices.ca</td>
-          <td>User</td>
-          <td>Yes</td>
-          <td class="text-center">
-            <a class="text-primary" data-toggle="modal" data-target="#addUser">
-              <i class="fas fa-pencil-alt" aria-hidden="true"></i>
-            </a>
-          </td>
-        </tr>
-
-        <tr>
-          <td>akash</td>
-          <td>akash@accountingandtaxservices.ca</td>
-          <td>Admin</td>
-          <td>Yes</td>
-          <td class="text-center">
-            <a class="text-primary" data-toggle="modal" data-target="#addUser">
-              <i class="fas fa-pencil-alt" aria-hidden="true"></i>
-            </a>
-          </td>
-        </tr>
-
-        <tr>
-          <td>janice</td>
-          <td>bookkeeper@accountingandtaxservices.ca</td>
-          <td>Admin</td>
-          <td>Yes</td>
-          <td class="text-center">
-            <a class="text-primary" data-toggle="modal" data-target="#addUser">
-              <i class="fas fa-pencil-alt" aria-hidden="true"></i>
-            </a>
-          </td>
-        </tr>
-
-        <tr>
-          <td>odette</td>
-          <td>office@accountingandtaxservices.ca</td>
-          <td>User</td>
-          <td>No</td>
-          <td class="text-center">
-            <a class="text-primary" data-toggle="modal" data-target="#addUser">
-              <i class="fas fa-pencil-alt" aria-hidden="true"></i>
-            </a>
-          </td>
-        </tr>
-
-        <tr>
-          <td>Corneli</td>
-          <td>admin@accountingandtaxservices.ca</td>
-          <td>Admin</td>
-          <td>Yes</td>
-          <td class="text-center">
-            <a class="text-primary" data-toggle="modal" data-target="#addUser">
-              <i class="fas fa-pencil-alt" aria-hidden="true"></i>
-            </a>
-          </td>
-        </tr>
-
-        <tr>
-          <td>Penny - for signoff by Janice</td>
-          <td>penny@accountingandtaxservices.ca</td>
-          <td>User</td>
-          <td>Yes</td>
-          <td class="text-center">
-            <a class="text-primary" data-toggle="modal" data-target="#addUser">
-              <i class="fas fa-pencil-alt" aria-hidden="true"></i>
-            </a>
-          </td>
-        </tr>
-
-        <tr>
-          <td>odette</td>
-          <td>office2@accountingandtaxservices.ca</td>
-          <td>User</td>
-          <td>Yes</td>
-          <td class="text-center">
-            <a class="text-primary" data-toggle="modal" data-target="#addUser">
-              <i class="fas fa-pencil-alt" aria-hidden="true"></i>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td>user</td>
-          <td>user@gmail.com</td>
-          <td>User</td>
-          <td>Yes</td>
-          <td class="text-center">
-            <a class="text-primary" data-toggle="modal" data-target="#addUser">
-              <i class="fas fa-pencil-alt" aria-hidden="true"></i>
-            </a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
   </div>
 </div>
