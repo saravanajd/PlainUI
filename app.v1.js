@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  loadPage("Users");
+  loadPage("Form");
 
   $(".sidebar-nav a").click(function () {
     const fileName = $(this).attr("data-workspace-src");

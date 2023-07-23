@@ -104,3 +104,8 @@ body {
     padding-left: 0;
   }
 }
+
+main{
+  overflow: auto;
+  height: calc(100vh - var(--header-height) );
+}
